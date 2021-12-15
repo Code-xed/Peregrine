@@ -66,6 +66,7 @@ AstNodePtr Parser::parseStatement() {
             break;
         }
 
+        case tk_as:
         case tk_from:
         case tk_import: {
             stmt = parseImport();
